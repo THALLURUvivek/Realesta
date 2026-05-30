@@ -19,29 +19,32 @@
 <body>
 
     <!-- NAVBAR -->
+<header class="navbar">
 
-  <header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-building"></i>
+        Golden Estate
+    </div>
 
-        <div class="logo">
-            <i class="fa-solid fa-building"></i>
-            Golden Estate
-        </div>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="Pages/index.html">Home</a></li>
-                <li><a href="Pages/index.html">About</a></li>
-                <li><a href="Pages/index.html">Services</a></li>
-                <li><a href="Pages/index.html">Properties</a></li>
-                <li><a href="Pages/index.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        <button class="quote-btn">
-            Get Quote
-        </button>
+    <button class="quote-btn">
+        Get Quote
+    </button>
 
-    </header>
+</header>
 <section class="hero" id="hero">
 
     <div class="hero-overlay"></div>
@@ -783,6 +786,15 @@
     <!-- JAVASCRIPT -->
 
     <script src="js/script.js"></script>
+
+    <script>
+const menuBtn = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
 
 </body>
 
