@@ -159,31 +159,41 @@ button{
 }
 
 /* Logo */
-
+/* LOGO CONTAINER */
 .logo{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    font-size:32px;
-
-    font-weight:700;
-
-    color:blue;
-
-    letter-spacing:1px;
+    display: flex;
+    align-items: center;
 }
 
-.logo i{
+/* LOGO IMAGE */
+.logo img{
+    width: 200px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
 
-    color:#f5c518;
+/* HOVER EFFECT */
+.logo img:hover{
+    transform: translateY(-2px) scale(1.05);
+}
 
-    font-size:34px;
+/* RESPONSIVE LOGO */
+@media (max-width: 768px){
+    .logo img{
+        width: 160px;
+        height: 50px;
+    }
+}
 
-    transition:.4s;
+@media (max-width: 480px){
+    .logo img{
+        width: 130px;
+        height: 40px;
+    }
 }
 
 .logo:hover i{
@@ -199,7 +209,7 @@ button{
 
     align-items:center;
 
-    gap:40px;
+    gap:30px;
 }
 
 .nav-links a{
@@ -295,6 +305,54 @@ button{
 
     box-shadow:
     0 10px 35px rgba(0,0,0,0.35);
+}
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.login-btn,
+.signup-btn,
+.quote-btn{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+/* Login Button */
+.login-btn{
+    background:red;
+    color:black;
+   
+}
+
+
+
+/* Sign Up Button */
+.signup-btn{
+    background:#f59e0b;
+    color:black;
+}
+
+.signup-btn:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
+/* Get Quote Button */
+.quote-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.quote-btn:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
 }
 /* ==========================
    HERO SECTION
