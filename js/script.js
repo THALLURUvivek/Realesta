@@ -1,6 +1,12 @@
+
 // ==============================
 // NAVBAR SCROLL EFFECT
 // ==============================
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+    }, 1500);
+});
 
 window.addEventListener("scroll", () => {
 
